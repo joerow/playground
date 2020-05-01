@@ -15,9 +15,8 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from polls import views, urls
-from chartsjs import views
 
+from chartsjs import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -30,3 +29,4 @@ urlpatterns = [
     path('api', views.ChartData.as_view()),
 ]
 
+# testing upload
